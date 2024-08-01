@@ -15,7 +15,9 @@ body {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
+  background: url("./assets/banner.png") repeat;
+  background-position: center;
 }
 
 
@@ -28,25 +30,35 @@ body {
   justify-content: center;
   background-color: #ff7a99;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   position: absolute;
   z-index: 1;
   
   box-shadow: 0px 0px 72px 0px #da4a6b inset;
   opacity: 1;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.7s ease-in-out;
 }
 .OverlayLoadMain.visible {
   opacity: 1;
 }
 .OverlayLoadMain.hidden{
   opacity: 0;
+  
 }
+
+
+
 .cupA {
   width: 200px;
   height: 200px;
-  background-image: url("./assets/CupAnn.gif");
+  background: url("./assets/CakeGif.gif") no-repeat center;
   background-size: 100%;
+  
+}
+.Overlay-Insta {
+  position: absolute;
+  bottom: 2dvh;
+  font-size: 1.4rem;
 }
 .Overlayinfo {
   display: flex;
@@ -74,7 +86,7 @@ body {
 .button-w {
   display: flex;
   position: fixed;
-  bottom: 20px;
+  
   width: 250px;
   height: 60px;
   align-items: center;
@@ -90,7 +102,16 @@ body {
   background-color: #ff4f78;
   box-shadow: 0 0 0 4px #ff4f78, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
   transition: .1s ease-in-out, .4s color;
+  transition: bottom 0.7s ease-in-out;
 }
+.button-w.on {
+  bottom: 2vh;
+}
+.button-w.off {
+  bottom: -22vh;
+}
+
+
 
 button:active {
   transform: translateX(0.1em) translateY(0.1em);
