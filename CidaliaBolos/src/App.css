@@ -18,12 +18,7 @@ body {
   height: 100vh;
 }
 
-@keyframes OverDone {
-  from {opacity: 1;}
-  to {opacity: 0; display: none;}
-  
 
-}
 
 .OverlayLoadMain {
   display: flex;
@@ -36,21 +31,34 @@ body {
   height: 100vh;
   position: absolute;
   z-index: 1;
-  animation-name: OverDone;
-  animation-delay: 1s;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
+  
+  box-shadow: 0px 0px 72px 0px #da4a6b inset;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
 }
-
-
+.OverlayLoadMain.visible {
+  opacity: 1;
+}
+.OverlayLoadMain.hidden{
+  opacity: 0;
+}
+.cupA {
+  width: 200px;
+  height: 200px;
+  background-image: url("./assets/CupAnn.gif");
+  background-size: 100%;
+}
 .Overlayinfo {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   width: 70%;
   height: 60%;
  
   color: #ffffff;
-  font-size: 30px;
+  font-size: 1.2rem;
   font-family: "Lilita One", sans-serif;
   font-weight: 400;
   font-style: normal;
