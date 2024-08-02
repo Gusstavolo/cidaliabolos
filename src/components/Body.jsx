@@ -35,9 +35,8 @@ const OverlayLoad = () => {
                 <div className='cupA'></div>
                 Consulte o WhatsApp para mais informações.
             </div>
-            <div className='Overlay-Insta'>
-              @andrade.cidalia
-            </div>
+            
+           
         </div>
     }
     </>
@@ -86,7 +85,7 @@ export const Body = () => {
 
         <div className="body_main">
            <OverlayLoad />
-
+            <div className='BannerHead'></div>
 
 
 

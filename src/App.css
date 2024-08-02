@@ -12,12 +12,15 @@ body {
 }
 .body_main {
   display: flex;
-  align-items: center;
+  
   justify-content: center;
-  width: 100vw;
+  width: 100dvw;
   height: 100dvh;
   background: url("./assets/banner.png") repeat;
   background-position: center;
+}
+.main{
+
 }
 
 
@@ -116,8 +119,16 @@ body {
 button:active {
   transform: translateX(0.1em) translateY(0.1em);
   box-shadow: 0 0 0 4px #ff7a99, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);
+
 }
 
+
+.BannerHead {
+  width:100dvw;
+  height: 22dvh;
+  background: url("./assets/BannerH.png") no-repeat;
+  background-size: 100%;
+}
 
 
 
