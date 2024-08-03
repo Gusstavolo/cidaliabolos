@@ -1,6 +1,10 @@
 import '../App.css'
-import { useState,useEffect } from 'react'
+import './custom.slider.css'
+import 'react-slideshow-image/dist/styles.css';
 
+import { SlideSizeCake } from './custom.slider';
+import { useState,useEffect } from 'react'
+import { Slide } from 'react-slideshow-image';
 
 
 const OverlayLoad = () => {
@@ -85,9 +89,15 @@ export const Body = () => {
 
         <div className="body_main">
            <OverlayLoad />
-            <div className='BannerHead'></div>
+            <div className='bannerHead'></div>
+
+            <div className='bannerSizeOptions'>
+                    
+                  <SlideSizeCake />
 
 
+            </div>
+       
 
 
             <WhatsButton />

@@ -12,8 +12,8 @@ body {
 }
 .body_main {
   display: flex;
-  
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100dvw;
   height: 100dvh;
   background: url("./assets/banner.png") repeat;
@@ -123,11 +123,17 @@ button:active {
 }
 
 
-.BannerHead {
+.bannerHead {
   width:100dvw;
   height: 22dvh;
   background: url("./assets/BannerH.png") no-repeat;
   background-size: 100%;
+}
+.bannerSizeOptions {
+  display: flex;
+  width:100dvw;
+  height: 25dvh;
+  background-color: #ff7a99;
 }
 
 
