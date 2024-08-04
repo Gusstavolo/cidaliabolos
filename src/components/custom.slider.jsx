@@ -1,14 +1,21 @@
 import { Slide } from 'react-slideshow-image';
 //import 'react-slideshow-image/dist/styles.css';
 import "./custom.slider.css";
+
+
+import imgAro15px from '/src/assets/imgAro/aro15px.png';
+import imgAro18px from '/src/assets/imgAro/aro18px.png';
+import imgAro20px from '/src/assets/imgAro/aro20px.png';
+import imgAro23px from '/src/assets/imgAro/aro23px.png';
+import imgAro28px from '/src/assets/imgAro/aro28px.png';
 export const SlideSizeCake = () => {
     const images = [
         
-        "../../public/imgAro/aro15px.png",
-        "../../public/imgAro/aro18px.png",
-        "../../public/imgAro/aro20px.png",
-        "../../public/imgAro/aro23px.png",
-        "../../public/imgAro/aro28px.png",
+        imgAro15px,
+        imgAro18px,
+        imgAro20px,
+        imgAro23px,
+        imgAro28px
 
     ];
 
