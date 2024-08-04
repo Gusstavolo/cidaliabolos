@@ -3,11 +3,12 @@ import { Slide } from 'react-slideshow-image';
 import "./custom.slider.css";
 export const SlideSizeCake = () => {
     const images = [
-        "src/assets/imgAro/aro15px.png",
-        "src/assets/imgAro/aro18px.png",
-        "src/assets/imgAro/aro20px.png",
-        "src/assets/imgAro/aro23px.png",
-        "src/assets/imgAro/aro28px.png",
+        
+        "public/imgAro/aro15px.png",
+        "public/imgAro/aro18px.png",
+        "public/imgAro/aro20px.png",
+        "public/imgAro/aro23px.png",
+        "public/imgAro/aro28px.png",
 
     ];
 
