@@ -138,6 +138,9 @@ button:active {
 
 
 
-@media screen and (max-width: 1440px) {
-   
+@media screen and (min-width: 1140px) {
+  .bannerHead {
+    height: 30dvh;
+    background-size: 60%;
+  }
 }
