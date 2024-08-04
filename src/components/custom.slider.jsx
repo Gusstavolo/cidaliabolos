@@ -4,11 +4,11 @@ import "./custom.slider.css";
 export const SlideSizeCake = () => {
     const images = [
         
-        "https://cidaliabolos.vercel.app/public/imgAro/aro15px.png",
-        "https://cidaliabolos.vercel.app/public/imgAro/aro18px.png",
-        "https://cidaliabolos.vercel.app/public/imgAro/aro20px.png",
-        "https://cidaliabolos.vercel.app/public/imgAro/aro23px.png",
-        "https://cidaliabolos.vercel.app/public/imgAro/aro28px.png",
+        "../../public/imgAro/aro15px.png",
+        "../../public/imgAro/aro18px.png",
+        "../../public/imgAro/aro20px.png",
+        "../../public/imgAro/aro23px.png",
+        "../../public/imgAro/aro28px.png",
 
     ];
 
