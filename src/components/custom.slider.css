@@ -32,3 +32,8 @@
     
     text-align: center;
   }
+  .test {
+    width: 100%;
+    height: 20vh;
+    background-image: url("../../public/imgAro/aro15px.png");
+  }
