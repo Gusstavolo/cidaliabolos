@@ -35,5 +35,18 @@
   .test {
     width: 100%;
     height: 20vh;
-    background-image: url("../../public/imgAro/aro15px.png");
+    background-image: url("../assets/imgAro/aro15px.png");
+  }
+
+  @media screen and (min-width: 1000px) { 
+
+    .react-slideshow-container {
+      
+      width: 400px;
+     
+  }
+  .each-slide-effect{
+    height: 36vh;
+  }
+  
   }

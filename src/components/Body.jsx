@@ -90,7 +90,7 @@ export const Body = () => {
         <div className="body_main">
            <OverlayLoad />
             <div className='bannerHead'></div>
-
+            <div  className='titlename'>TAMANHOS</div>
             <div className='bannerSizeOptions'>
                     
                   <SlideSizeCake />
