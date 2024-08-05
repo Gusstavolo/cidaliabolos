@@ -24,6 +24,23 @@ body {
 .main{
 
 }
+.Header_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+  background-color: #ff7a99;
+  
+}
+.Header_logo {
+  
+  width: 60px;
+  height:60px;
+  background: url("./assets/CidaliaLogo.png") center;
+  background-size: 100%;
+ 
+}
 
 
 
@@ -134,20 +151,19 @@ button:active {
 .bannerSizeOptions {
   display: flex;
   width:100dvw;
-  height: 25dvh;
+  height: 28dvh;
   background-color: #ff7a99;
 }
 .titlename {
   display: flex;
-  width: 100dvw;
+  width: 100vw;
   
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
   text-align: center;
   background-color: #f86184;
-  border: 0.2rem dashed #ffffff;
-  padding: 5px;
+  padding: 10px;
   
   
   
@@ -157,20 +173,24 @@ button:active {
 
 @media screen and (min-width: 1000px) {
   .body_main {
-    width: 400px;
+    width: 500px;
   }
  
   .bannerHead {
     width: 100%;
-    height: 30vh;
+    height: 33vh;
   }
   .titlename {
     width: 100%;
   }
   .bannerSizeOptions {
     width: 100%;
+    height: 35vh;
   }
   .button-w{
-    scale: 0.6;
+    scale: 0.7;
+  }
+  .Header_logo {
+    
   }
 }

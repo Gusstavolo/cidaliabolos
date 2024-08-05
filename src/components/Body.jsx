@@ -80,6 +80,15 @@ const WhatsButton = ( ) => {
 
   )
 }
+const Header = () => {
+  return (
+      <div className='Header_main'>
+          <div className='Header_logo'></div>
+          
+      </div>
+
+  )
+}
 
 export const Body = () => {
     
@@ -88,15 +97,15 @@ export const Body = () => {
     return(
 
         <div className="body_main">
+           <Header />
            <OverlayLoad />
             <div className='bannerHead'></div>
             <div  className='titlename'>TAMANHOS</div>
             <div className='bannerSizeOptions'>
                     
                   <SlideSizeCake />
-
-
             </div>
+            <div  className='titlename'>SABORES DE MASSA</div>
             
 
 

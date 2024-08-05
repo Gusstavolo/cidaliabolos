@@ -22,7 +22,7 @@ export const SlideSizeCake = () => {
     return (
       <div className='slideshow-div-config'>
         <Slide className='react-slideshow-container'
-        autoplay={false}
+        autoplay={true}
         onChange={function noRefCheck(){}}
         onStartChange={function noRefCheck(){}}>
             <div className="each-slide-effect">

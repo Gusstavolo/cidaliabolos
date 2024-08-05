@@ -42,11 +42,11 @@
 
     .react-slideshow-container {
       
-      width: 400px;
+      width: 500px;
      
   }
-  .each-slide-effect{
-    height: 36vh;
-  }
+    .each-slide-effect{
+      height: 36vh;
+    }
   
   }
