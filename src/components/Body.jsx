@@ -108,6 +108,7 @@ export const Body = () => {
             <div  className='titlename'>TIPOS DE MASSAS</div>
             <div className='bannerMassas'></div>
 
+            <div  className='titlename'>DECORAÇÃO</div>
 
             <WhatsButton />
         </div>
