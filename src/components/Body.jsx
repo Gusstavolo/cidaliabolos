@@ -106,7 +106,7 @@ export const Body = () => {
                   <SlideSizeCake />
             </div>
             <div  className='titlename'>TIPOS DE MASSAS</div>
-            
+            <div className='bannerMassas'></div>
 
 
             <WhatsButton />
