@@ -157,14 +157,15 @@ button:active {
 .titlename {
   display: flex;
   width: 100vw;
-  
+  height: 1vh;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: center;
-  background-color: #f86184;
+  background-color: #ff7a99;
   padding: 10px;
-  
+  background: url("./assets/patern.png");
+  background-size: 50%;
   
   
 }
@@ -185,7 +186,7 @@ button:active {
   }
   .bannerSizeOptions {
     width: 100%;
-    height: 35vh;
+    height: 38vh;
   }
   .button-w{
     scale: 0.7;
