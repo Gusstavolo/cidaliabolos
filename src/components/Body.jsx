@@ -5,7 +5,7 @@ import 'react-slideshow-image/dist/styles.css';
 import { SlideSizeCake } from './custom.slider';
 import { useState,useEffect } from 'react'
 import { Slide } from 'react-slideshow-image';
-
+import { ImageSlider } from './ImageSlider';
 
 const OverlayLoad = () => {
   const [visible, setVisible] = useState(false);
@@ -89,6 +89,14 @@ const Header = () => {
 
   )
 }
+const TestSlide = () => {
+  return (
+    <div className='bannerSizeOptions'>  
+      <SlideSizeCake />
+    </div>
+
+  )
+}
 
 export const Body = () => {
     
@@ -101,12 +109,14 @@ export const Body = () => {
            <OverlayLoad />
             <div className='bannerHead'></div>
             <div  className='titlename'>TAMANHOS</div>
-            <div className='bannerSizeOptions'>
-                    
-                  <SlideSizeCake />
-            </div>
+             
+            <ImageSlider />
+            
             <div  className='titlename'>TIPOS DE MASSAS</div>
-            <div className='bannerMassas'></div>
+
+            <div className='bannerMassas_main'>
+              <div className='bannerMassas' />
+            </div>
 
             <div  className='titlename'>DECORAÇÃO</div>
 

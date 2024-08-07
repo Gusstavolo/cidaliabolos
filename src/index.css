@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Jersey+10&family=Lilita+One&family=Poetsen+One&family=Salsa&family=Signika:wght@300..700&family=Staatliches&family=Workbench&display=swap');
-
+html{
+  background-color: rgb(49, 49, 49);
+}
 div{
   color: #ffffff;
   font-size: 1rem;
