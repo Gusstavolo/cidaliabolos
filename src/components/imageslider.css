@@ -8,13 +8,26 @@
 .slide_content_img {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 190px;
     background-size: 100%;
+    gap: 83vw;
 }
 .slide_content_bottonL {
+    display: flex;
     position: relative;
-    width: 4vw;
-    height: 2vh;
-    right: -1vw;
-    background-color: aqua;
+    align-items: center;
+    width: 30px;
+    height: 100%;
+    
+    font-size: 50px;
+    background-color: #ff7a9923;
+    
+}
+.slide_content_bottonR {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    font-size: 50px;
+    
 }

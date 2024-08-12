@@ -9,6 +9,8 @@ import imgAro28px from '/src/assets/imgAro/aro28px.png';
 
 
 export const ImageSlider = () => {
+    const str = "<";
+    const str2 = ">";
     const images = [
         
         imgAro15px,
@@ -23,7 +25,8 @@ export const ImageSlider = () => {
 
             <div className="slide_content">
                  <div className="slide_content_img"style={{ 'backgroundImage': `url(${images[1]})` }}>
-                    <div className="slide_content_bottonL"></div>
+                    <div className="slide_content_bottonL">{str}</div>
+                    <div className="slide_content_bottonL">{str2}</div>
                 </div>
             </div>
 
