@@ -49,7 +49,7 @@ body {
   position: fixed;
   flex-direction: column;
   align-items: center;
-  
+  top: 0;
   justify-content: center;
   background-color: #ff7a99;
   width: 100vw;
@@ -179,6 +179,8 @@ button:active {
   background: no-repeat url('./assets/massasB.png');
   background-size: 100%;
 }
+
+
 
 
 

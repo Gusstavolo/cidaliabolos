@@ -6,6 +6,7 @@ import { SlideSizeCake } from './custom.slider';
 import { useState,useEffect } from 'react'
 import { Slide } from 'react-slideshow-image';
 import { ImageSlider } from './ImageSlider';
+import { OptionLeftSize } from './optionschange/OptionsMenu';
 
 const OverlayLoad = () => {
   const [visible, setVisible] = useState(false);
@@ -86,7 +87,6 @@ const Header = () => {
           <div className='Header_logo'></div>
           
       </div>
-
   )
 }
 const TestSlide = () => {
@@ -105,22 +105,30 @@ export const Body = () => {
     return(
 
         <div className="body_main">
-           <Header />
            <OverlayLoad />
-            <div className='bannerHead'></div>
-            <div  className='titlename'>TAMANHOS</div>
-             
-            <ImageSlider />
-            
-            <div  className='titlename'>TIPOS DE MASSAS</div>
-
-            <div className='bannerMassas_main'>
-              <div className='bannerMassas' />
-            </div>
-
-            <div  className='titlename'>DECORAÇÃO</div>
-
+            <OptionLeftSize />
             <WhatsButton />
         </div>
     )
+}
+
+export const Bodyss = () => {
+
+return(
+  <>
+             <Header />
+
+  <div className='bannerHead'></div>
+  <div  className='titlename'>TAMANHOS</div>
+  
+  <ImageSlider />
+
+  <div  className='titlename'>TIPOS DE MASSAS</div>
+
+  <div className='bannerMassas_main'>
+    <div className='bannerMassas' />
+  </div>
+
+  <div  className='titlename'>DECORAÇÃO</div>
+</>)
 }
