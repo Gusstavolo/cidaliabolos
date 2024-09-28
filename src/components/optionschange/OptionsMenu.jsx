@@ -71,7 +71,11 @@ export const OptionLeftSize = () => {
           {selectedSize ? (
             <>
               <div className='option_infos_aro'>{sizeInfos[selectedSize].aro}</div>
+              <div className='option_infos_fatia'>
+
+              </div>
               <div className='option_infos_fatias'>
+
                 <div className='option_infos_preco'>
                 {sizeInfos[selectedSize].preco}
                 </div>
@@ -212,4 +216,26 @@ export const OptionRecheios = () => {
     )
 
 
+}
+export const OptionDecoracao = () => {
+
+    return (
+        <div className='main_option'>
+            <div className='topdecor'>
+                <div className='topdecor_chantininho'>
+
+                </div>
+                <div className='topdecor_acetato'>
+
+                </div>
+                    
+            </div>
+            <div className='topdecor'>
+                
+            </div>
+
+        </div>
+
+
+    )
 }
