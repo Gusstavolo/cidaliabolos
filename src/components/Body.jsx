@@ -6,7 +6,7 @@ import { SlideSizeCake } from './custom.slider';
 import { useState,useEffect } from 'react'
 import { Slide } from 'react-slideshow-image';
 import { ImageSlider } from './ImageSlider';
-import { OptionLeftSize, OptionRightSize } from './optionschange/OptionsMenu';
+import { OptionLeftSize, OptionRightSize, HeaderO } from './optionschange/OptionsMenu';
 
 const OverlayLoad = () => {
   const [visible, setVisible] = useState(false);
@@ -107,6 +107,7 @@ export const Body = () => {
         <div className="body_main">
           <div className="main">
            <OverlayLoad />
+           <HeaderO />
             <OptionLeftSize />
 
             

@@ -2,6 +2,18 @@ import './optionsmenu.css'
 import React, { useState, useEffect } from 'react';
 
 
+export const HeaderO = () => {
+
+
+    return(
+        <div className='headerO'>
+            <div className='headerO_d'>
+
+            </div>
+        </div>
+
+    )
+}
 
 
 export const OptionLeftSize = () => {
@@ -98,7 +110,7 @@ export const OptionRightSize = () => {
     }, []);
 
     return (
-        <div className="main_option">
+        <div className="main_option main_option_massas">
             <div className="option_right">
                 <div className="option_left_size">
                     <div className="midle_title_right">
