@@ -28,7 +28,9 @@ box-shadow: 0px 0px 1px 5px #0000003d;
     background-size: 100%;
     flex-direction: column;
     align-content: center;
-    align-items: flex-start;
+    align-items: center;
+
+
     justify-content: center;
    
 }
@@ -375,40 +377,24 @@ box-shadow: 0px 0px 1px 5px #0000003d;
 
 .topdecor{
     display: flex;
-    width: 100vw;
+    width: auto;
     height: auto;
     justify-content: center;
 }
-.topdecor_chantininho{
-    width: 50%;
-}
-.topdecor_acetato{
-    width: 50%;
-}
+
 .topdecor_chantininho_img{
-    display: flex;
-    justify-content: center;
-    
-    width: auto;
-    height: 190px;
-    background-image: url(/src/assets/imgWeb/BoloChantinhoC2.png);
+    background-image: url(/src/assets/imgWeb/bannerachantininho.png);
     background-size: 100%;
-    border-radius: 10px;
-    margin: 5px;
 
 }
 .topdecor_acetato_img{
-    display: flex;
-    justify-content: center;
-    
-    width: auto;
-    height: 190px;
-    background-image: url(/src/assets/imgWeb/boloachantininho.png);
+   
+    background-image: url(/src/assets/imgWeb/banneracetato2.png);
     background-size: 100%;
-    border-radius: 10px;
-    margin: 5px;
+    
 }
 .chantininho_txt{
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -422,9 +408,102 @@ box-shadow: 0px 0px 1px 5px #0000003d;
     background-color: #FF5B87;
 }
 
+.h1_topdecor{
+    width: 100%;
+    font-size: 1.4rem;
+    background-color: #FF5B87;
+}
+.main_option_ac{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    margin-bottom: 10px;
+    background-size: 100%;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
 
 
+    justify-content: center;
+}
+.option_left_size_ac{
+    display: flex;
+    width: 31vw;
+    background-color: #FF7A99;
+}
+.option_a_ac{
+    display: flex;
+    position: relative;
+ 
+    
+    width: 113px;
+    height: 103px;
+    background-color: #FF5B87;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.midle_title_text_ac{
+    display: flex;
+    position: relative;
+    right: 15px;
+    font-size: 1rem;
+    margin: 0;
+    color: white;
+    height: auto;
 
+    transform: rotate(90deg);
+}
+.option_a_buttom_ac {
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: center;
+    width:  100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #FF5B87;
+    box-shadow: 0 0 0 5px rgba(253, 253, 253, 0); /* Simula uma borda branca com opacidade */
+
+    transition: transform 0.7s ease, border-color 0.3s ease, box-shadow 0.6s ease; /* Adicionado */
+}
+.option_infos_aro_ac{
+    display: flex;
+
+    width: auto;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom-left-radius: 27px;
+    border-bottom-right-radius: 27px;
+    background-color: #FF5B87;
+}
+.option_left_infos_ac{
+    display: flex;
+    width: 64vw;
+    height: auto;
+   
+    
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Quando a opção está ativa (selecionada) */
+
+/* Adicionamos a classe para a animação suave quando a opção está ativa */
+.selected_ac .option_a_buttom_ac {
+    transform: translateX(-10px); /* Move para a esquerda */
+    border-color: white; /* Borda branca */
+    box-shadow: 0 0 0 5px rgb(255, 255, 255); /* Simula uma borda branca com opacidade */
+    z-index: 3;
+    
+
+}
 
 
 @media screen and (min-width: 1000px) {

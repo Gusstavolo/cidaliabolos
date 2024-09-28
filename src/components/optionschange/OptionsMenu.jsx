@@ -218,32 +218,76 @@ export const OptionRecheios = () => {
 
 }
 export const OptionDecoracao = () => {
-
+    const sizes = ['AC', 'CH'];
+    const [selectedSize, setSelectedSize] = useState(sizes[0]);
+  
+    const handleSizeClick = (size) => {
+      setSelectedSize(size);
+    };
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setSelectedSize((prevSize) => {
+          const currentIndex = sizes.indexOf(prevSize);
+          const nextIndex = (currentIndex + 1) % sizes.length;
+          return sizes[nextIndex];
+        });
+      }, 9000);
+  
+      return () => clearInterval(interval);
+    }, []);
+  
+    const sizeInfos = {
+        AC: { nome: 'ACETATO', layer: 'topdecor_acetato_img' },
+        CH: { nome: 'CHANTINIHO', layer: 'topdecor_chantininho_img' },
+     
+    };
     return (
-        <div className='main_option'>
-            <div className='topdecor'>
+        <div className={`main_option_ac ${sizeInfos[selectedSize].layer}`}>
+            <div className='option_left'>
+                <div className='option_left_size_ac'>
+                    <div className='options_indirecton'>
+                        {sizes.map((size) => (
+                        <div
+                            key={size}
+                            className={`option_a_ac ${selectedSize === size ? 'selected_ac' : ''}`}
+                            onClick={() => handleSizeClick(size)}
+                        >
+                            <div className={`option_a_buttom_ac ${selectedSize === size ? 'animate_ac' : ''}`}>
+                            <h2>{size}</h2>
+                            </div>
+                     </div>
+                    ))}
+                </div>
+            </div> 
+            <div className='midle_title'>
+            <div className='midle_title_text_ac'>TIPOS</div>
+            </div>
+            
+            <div className='option_left_infos_ac'>
+                <div className="option_infos_aro_ac"> {sizeInfos[selectedSize].nome}
                 
-                <div className='topdecor_chantininho'>
-                    <div className='chantininho_txt'>CHANTININHO</div>
-                    <div className='topdecor_chantininho_img' >
-                        
-                    </div>
+                
                 </div>
-                <div className='topdecor_acetato'>
-                <div className='chantininho_txt'>ACETATO</div>
+            </div>
 
-                    <div className='topdecor_acetato_img' >
+       
 
-                    </div>
-                </div>
+
+
+                
+              
                     
             </div>
-            <div className='topdecor'>
-                DECORE NO SEU ESTILO
+            <div className='h1_topdecor'>
+            DECORE NO SEU ESTILO
             </div>
+            
+          
 
         </div>
 
 
     )
 }
+
