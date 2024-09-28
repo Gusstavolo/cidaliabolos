@@ -116,7 +116,8 @@ export const OptionRightSize = () => {
       };
 
     return (
-        <div className={`main_option ${sizeInfos[selectedSize].layer}`}>
+        <div className={`main_optionM ${sizeInfos[selectedSize].layer}`}>
+            <div className='headerO_recheios'>*OPÇÃO DE DUAS MASSAS E DOIS RECHEIOS OU APENAS UMA</div>
             <div className="option_right">
                 <div className="option_left_size">
                     <div className="midle_title_right">
@@ -144,4 +145,71 @@ export const OptionRightSize = () => {
         </div>
     );
 };
+export const OptionRecheios = () => {
 
+
+
+    return(
+        <div className='main_option main_option_recheios'>
+            <div className='buttom_info_txtH1'>RECHEIOS</div>
+            <div className='top_list'>
+                <div className='buttom_info_recheios'>
+                    
+                    <div className='buttom_info_recheios_cor recheios_cor_NM'>
+
+                    </div>
+                    <div className='buttom_info_txt '>NINHO COM MORANGO</div>
+                    
+                </div>
+                <div className='buttom_info_recheios'>
+                    
+                    <div className='buttom_info_recheios_cor recheios_cor_brigadeiro'>
+
+                    </div>
+                    <div className='buttom_info_txt'>BRIGADEIRO</div>
+                </div>
+                
+
+            </div>
+            <div className='top_list'>
+                <div className='buttom_info_recheios'>
+                    
+                    <div className='buttom_info_recheios_cor recheios_cor_ninho'>
+
+                    </div>
+                    <div className='buttom_info_txt'>NINHO</div>
+                </div>
+                <div className='buttom_info_recheios'>
+                    
+                    <div className='buttom_info_recheios_cor recheios_cor_ameixa'>
+
+                    </div>
+                    <div className='buttom_info_txt'>AMEIXA</div>
+                </div>
+                <div className='buttom_info_recheios'>
+                    
+                    <div className='buttom_info_recheios_cor recheios_cor_abacaxi'>
+
+                    </div>
+                    <div className='buttom_info_txt'>ABACAXI</div>
+                </div>
+
+            </div>
+            <div className='top_list'>
+                <div className='buttom_info_recheios'>
+                    
+                    <div className='buttom_info_recheios_cor recheios_cor_DL'>
+
+                    </div>
+                    <div className='buttom_info_txt'>DOCE DE LEITE</div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    )
+
+
+}

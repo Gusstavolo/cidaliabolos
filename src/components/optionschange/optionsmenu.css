@@ -25,29 +25,45 @@ box-shadow: 0px 0px 1px 5px #0000003d;
     height: auto;
     margin-bottom: 10px;
     background: url(/src/assets/imgWeb/FundoTamanhos.png);
-    background-size: 110%;
+    background-size: 100%;
     flex-direction: column;
     align-content: center;
     align-items: flex-start;
     justify-content: center;
    
 }
+.main_optionM{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    margin-bottom: 10px;
+    background: url(/src/assets/imgWeb/FundoTamanhos.png);
+    background-size: 100%;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: center;
+}
 .main_option_massabranca{
     background: url(/src/assets/imgWeb/massabranca.png);
 
-    background-size: 100%;
+    background-size: 101%;
+    background-position: 0px 13px;
+
 
 }
 .main_option_massachocolate{
     background: url(/src/assets/imgWeb/massachocolate.png);
 
-    background-size: 100%;
+    background-size: 101%;
+    background-position: 0px 13px;
 
 }
 .main_option_massared{
     background: url(/src/assets/imgWeb/massared.png);
 
-    background-size: 100%;
+    background-size: 101%;
+    background-position: 0px 13px;
 
 }
 .option_left{
@@ -275,6 +291,79 @@ box-shadow: 0px 0px 1px 5px #0000003d;
 .option_b_buttom_red{
     background-color: #ea0033;
 
+}
+
+
+.headerO_recheios{
+    width: 100vw;
+    height: 15px;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    background-color: #FF5B87;
+    font-size: 0.7rem;
+    
+    }
+.main_option_recheios{
+    align-items: center;
+   padding: 10px;
+   gap: 5px;
+}
+
+.top_list{
+    display: flex;
+    width: auto;
+    height: auto;
+    gap: 5PX;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.buttom_info_recheios{
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: #FF5B87;
+    color: white;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 30px;
+   
+
+}
+.buttom_info_txtH1{
+    font-size: 1.7rem;
+    
+}
+.buttom_info_txt{
+    font-size: 1.1rem;
+    padding: 10px;
+}
+.buttom_info_recheios_cor{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #ea0033;
+}
+.recheios_cor_NM{
+    background-color: #ff4444;
+}
+.recheios_cor_brigadeiro{
+    background-color: #522300;
+}
+.recheios_cor_ninho{
+    background-color: #f0c8a9;
+}
+.recheios_cor_ameixa{
+    background-color: #36005a;
+}
+.recheios_cor_abacaxi{
+    background-color: #fcac00;
+}
+.recheios_cor_DL{
+    background-color: #b96d32;
 }
 
 @media screen and (min-width: 1000px) {
