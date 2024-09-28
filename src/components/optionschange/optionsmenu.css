@@ -45,16 +45,19 @@
 }
 .option_infos_fatias{
     display: flex;
-
-    width: 160px;
-    font-size: 1.7rem;
+    flex-direction: column;
+    width: 180px;
+    font-size: 1.9rem;
     justify-content: center;
     align-items: center;
     padding: 2px;
-    height: 40px;
+    height: 60px;
     border-top-left-radius: 27px;
     border-top-right-radius: 27px;
     background-color: #FF5B87;
+}
+.option_infos_preco{
+    font-size: 1.4rem;
 }
 .option_left_size{
     display: flex;
@@ -69,6 +72,7 @@
     background-color: #FF5B87;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
+    box-shadow: 5px 0px 1px 0px #00000010;
 
 }
 .midle_title_text{
@@ -103,17 +107,43 @@
     border-bottom-left-radius: 23px;
     border-top-left-radius: 23px;
 }
-.option_a_buttom{
+.option_a_buttom {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
-    width: 53px;
-    height: 53px;
+    width: 50px;
+    height: 50px;
     border-radius: 23px;
     background-color: #FF5B87;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0); /* Simula uma borda branca com opacidade */
+
+    transition: transform 0.7s ease, border-color 0.3s ease, box-shadow 0.6s ease; /* Adicionado */
+}
+
+/* Quando a opção está ativa (selecionada) */
+.option_a.selected .option_a_buttom {
+    transform: translateX(-20px); /* Move para a esquerda */
+    box-shadow: 0 0 0 5px rgb(255, 255, 255); /* Simula uma borda branca com opacidade */
+    
+
+    z-index: 3;
+    
+}
+
+/* Adicionamos a classe para a animação suave quando a opção está ativa */
+.selected .option_a_buttom {
+    transform: translateX(-10px); /* Move para a esquerda */
+    border-color: white; /* Borda branca */
+    
 
 }
+.option_a_active{
+
+    border: 5px;
+    border-style: solid;
+}
+
 
 
 
@@ -136,6 +166,8 @@
     background-color: #FF5B87;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
+    box-shadow: -5px 0px 1px 0px #00000010;
+
 }
 .midle_title_text_right{
     display: flex;
@@ -180,7 +212,19 @@
     right: 10px;
     border-radius: 23px;
     background-color: #FF5B87;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0); /* Simula uma borda branca com opacidade */
+
+    transition: transform 0.7s ease, border-color 0.3s ease, box-shadow 0.6s ease; /* Adicionado */
+
 }
+.selected .option_b_buttom {
+    transform: translateX(15px); /* Animação para mover à esquerda */
+    box-shadow: 0 0 0 5px rgb(255, 255, 255); /* Simula uma borda branca com opacidade */
+    z-index: 2;
+}
+
+/* Efeito de fade-out para a borda */
+
 .option_b_buttom_white{
     background-color: #fcda76;
 
