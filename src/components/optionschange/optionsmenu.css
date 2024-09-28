@@ -3,8 +3,12 @@
     display: flex;
     width: 100vw;
     height: auto;
-    background-color: brown;
-    
+    background: url(/src/assets/imgAro/aro15px.png);
+    background-size: 120%;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: center;
 }
 .option_left{
     width: auto;
@@ -17,7 +21,7 @@
 }
 .option_left_size{
     display: flex;
-    width: 160px;
+    width: 35vw;
     background-color: #FF7A99;
 }
 .midle_title{
@@ -46,19 +50,116 @@
 .options_indirecton{
     display: flex;
     width: 100%;
-    gap: 5px;;
     flex-direction: column;
-    align-items: center;
-    margin: 2px;
-
+    align-items: flex-end;
+    background-color:#fc6f90  ;
 
 }
 .option_a{
     display: flex;
+    position: relative;
+ 
+    
+    width: 83px;
+    height: 53px;
+    background-color: #FF5B87;
+    border-bottom-left-radius: 23px;
+    border-top-left-radius: 23px;
+}
+.option_a_buttom{
+    display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-    width: 43px;
-    height: 43px;
-    border-radius: 100%;
+    width: 53px;
+    height: 53px;
+    border-radius: 23px;
+    background-color: #FF5B87;
+
+}
+
+
+
+.option_right{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: center;
+
+}
+.midle_title_right{
+    display: flex;
+    width: 19px;
+    height: auto;
+    align-items: center;
+    background-color: #FF5B87;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.midle_title_text_right{
+    display: flex;
+    position: relative;
+    right: 20px;
+    font-size: 1rem;
+    margin: 0;
+    color: white;
+    height: auto;
+
+    transform: rotate(-90deg);
+}
+.options_indirecton_b{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+
+
+}
+.option_b{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+
+
+    
+    width: 83px;
+    height: 63px;
+    background-color: #FF5B87;
+    border-bottom-right-radius: 28px;
+    border-top-right-radius: 28px;
+}
+.option_b_buttom{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    right: 10px;
+    border-radius: 23px;
     background-color: #FF5B87;
 }
+.option_b_buttom_white{
+    background-color: #fcda76;
+
+}
+.option_b_buttom_chocolate{
+    background-color: #a7603a;
+
+}
+.option_b_buttom_red{
+    background-color: #ea0033;
+
+}
+
+@media screen and (min-width: 1000px) {
+    .main_option {
+      width: auto;
+    }
+    
+  }
