@@ -298,3 +298,10 @@ export const OptionDecoracao = () => {
     )
 }
 
+export const OptionFoot = () => {
+    return (
+        <div className='foot_page'>
+
+        </div>
+    )
+}

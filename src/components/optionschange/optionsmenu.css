@@ -429,6 +429,7 @@ box-shadow: 0px 0px 1px 5px #0000003d;
 .option_left_size_ac{
     display: flex;
     width: 31vw;
+    height: 25vh;
     background-color: #FF7A99;
 }
 .option_a_ac{
@@ -437,7 +438,7 @@ box-shadow: 0px 0px 1px 5px #0000003d;
  
     
     width: 113px;
-    height: 103px;
+    height: 14vh;
     background-color: #FF5B87;
     border-bottom-left-radius: 50px;
     border-top-left-radius: 50px;
@@ -460,7 +461,7 @@ box-shadow: 0px 0px 1px 5px #0000003d;
     font-size: 1rem;
     justify-content: center;
     width:  100px;
-    height: 100px;
+    height: 12vh;
     border-radius: 50px;
     background-color: #FF5B87;
     box-shadow: 0 0 0 5px rgba(253, 253, 253, 0); /* Simula uma borda branca com opacidade */
@@ -484,7 +485,7 @@ box-shadow: 0px 0px 1px 5px #0000003d;
 .option_left_infos_ac{
     display: flex;
     width: 64vw;
-    height: auto;
+    height: 14vh;
    
     
     flex-direction: column;
@@ -515,14 +516,20 @@ box-shadow: 0px 0px 1px 5px #0000003d;
     
     width: 100%;
     height: 23vh;
-    box-shadow: 0px 25px 43px 3px #000000b2 inset;
+    box-shadow: 0px 25px 43px 3px #0802048e inset;
 
-    margin: 10px;
+   
     border-radius: 20px;
     background: url(/src/assets/imgWeb/cidaIAGIF2.gif) no-repeat;
     background-size: 100%;
 }
-
+.foot_page{
+    width: 100vw;
+    height: 300px;
+    background-color: #fc6f90;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
 
 @media screen and (min-width: 1000px) {
     .main_option {
