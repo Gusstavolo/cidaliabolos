@@ -311,6 +311,7 @@ box-shadow: 0px 0px 1px 5px #0000003d;
     }
 .main_option_recheios{
     align-items: center;
+    padding-bottom: 5px;
    gap: 5px;
 }
 
@@ -376,12 +377,49 @@ box-shadow: 0px 0px 1px 5px #0000003d;
     display: flex;
     width: 100vw;
     height: auto;
+    justify-content: center;
 }
 .topdecor_chantininho{
     width: 50%;
 }
 .topdecor_acetato{
     width: 50%;
+}
+.topdecor_chantininho_img{
+    display: flex;
+    justify-content: center;
+    
+    width: auto;
+    height: 190px;
+    background-image: url(/src/assets/imgWeb/BoloChantinhoC2.png);
+    background-size: 100%;
+    border-radius: 10px;
+    margin: 5px;
+
+}
+.topdecor_acetato_img{
+    display: flex;
+    justify-content: center;
+    
+    width: auto;
+    height: 190px;
+    background-image: url(/src/assets/imgWeb/boloachantininho.png);
+    background-size: 100%;
+    border-radius: 10px;
+    margin: 5px;
+}
+.chantininho_txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-size: 1.1rem;
+    background-color: #FF5B87;
 }
 
 

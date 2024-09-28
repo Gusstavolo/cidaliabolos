@@ -222,16 +222,24 @@ export const OptionDecoracao = () => {
     return (
         <div className='main_option'>
             <div className='topdecor'>
+                
                 <div className='topdecor_chantininho'>
-
+                    <div className='chantininho_txt'>CHANTININHO</div>
+                    <div className='topdecor_chantininho_img' >
+                        
+                    </div>
                 </div>
                 <div className='topdecor_acetato'>
+                <div className='chantininho_txt'>ACETATO</div>
 
+                    <div className='topdecor_acetato_img' >
+
+                    </div>
                 </div>
                     
             </div>
             <div className='topdecor'>
-                
+                DECORE NO SEU ESTILO
             </div>
 
         </div>
