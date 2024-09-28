@@ -2,6 +2,8 @@
   margin: 0px;
   padding: 0px;
   text-align: center;
+  -webkit-tap-highlight-color: transparent; /* Remove o efeito de clique em dispositivos móveis */
+
 }
 body {
   margin: 0;
