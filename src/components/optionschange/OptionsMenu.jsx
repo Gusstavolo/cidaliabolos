@@ -50,6 +50,16 @@ export const OptionLeftSize = () => {
                             TAMANHOS
                     </div>
                 </div>
+                <div className='option_left_infos'>
+                    <div className='option_infos_aro'>
+                        ARO 15
+                    </div>
+                    
+                    <div className='option_infos_fatias'>
+                        15 FATIAS
+                    </div>
+                    
+                </div>
             </div>
            
 
