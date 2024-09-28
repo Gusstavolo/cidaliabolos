@@ -165,17 +165,7 @@ export const OptionRecheios = () => {
                     <div className='buttom_info_txt '>NINHO COM MORANGO</div>
                     
                 </div>
-                <div className='buttom_info_recheios'>
-                    
-                    <div className='buttom_info_recheios_cor recheios_cor_brigadeiro'>
 
-                    </div>
-                    <div className='buttom_info_txt'>BRIGADEIRO</div>
-                </div>
-                
-
-            </div>
-            <div className='top_list'>
                 <div className='buttom_info_recheios'>
                     
                     <div className='buttom_info_recheios_cor recheios_cor_ninho'>
@@ -183,6 +173,18 @@ export const OptionRecheios = () => {
                     </div>
                     <div className='buttom_info_txt'>NINHO</div>
                 </div>
+                
+
+            </div>
+            <div className='top_list'>
+            <div className='buttom_info_recheios'>
+                    
+                    <div className='buttom_info_recheios_cor recheios_cor_brigadeiro'>
+
+                    </div>
+                    <div className='buttom_info_txt'>BRIGADEIRO</div>
+                </div>
+               
                 <div className='buttom_info_recheios'>
                     
                     <div className='buttom_info_recheios_cor recheios_cor_ameixa'>
@@ -190,13 +192,7 @@ export const OptionRecheios = () => {
                     </div>
                     <div className='buttom_info_txt'>AMEIXA</div>
                 </div>
-                <div className='buttom_info_recheios'>
-                    
-                    <div className='buttom_info_recheios_cor recheios_cor_abacaxi'>
-
-                    </div>
-                    <div className='buttom_info_txt'>ABACAXI</div>
-                </div>
+                
 
             </div>
             <div className='top_list'>
@@ -206,6 +202,13 @@ export const OptionRecheios = () => {
 
                     </div>
                     <div className='buttom_info_txt'>DOCE DE LEITE</div>
+                </div>
+                <div className='buttom_info_recheios'>
+                    
+                    <div className='buttom_info_recheios_cor recheios_cor_abacaxi'>
+
+                    </div>
+                    <div className='buttom_info_txt'>ABACAXI</div>
                 </div>
 
             </div>
@@ -279,10 +282,14 @@ export const OptionDecoracao = () => {
               
                     
             </div>
-            <div className='h1_topdecor'>
-            DECORE NO SEU ESTILO
+                <div className='h1_topdecor'>
+                DECORE NO SEU ESTILO
+                </div>
+            <div className='gif_section'>
+                <div className='gif_div'>
+
+                </div>
             </div>
-            
           
 
         </div>

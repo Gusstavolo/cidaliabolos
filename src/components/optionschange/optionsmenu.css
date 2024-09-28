@@ -383,13 +383,13 @@ box-shadow: 0px 0px 1px 5px #0000003d;
 }
 
 .topdecor_chantininho_img{
-    background-image: url(/src/assets/imgWeb/bannerachantininho.png);
+    background: url(/src/assets/imgWeb/bannerachantininho.png) no-repeat;
     background-size: 100%;
 
 }
 .topdecor_acetato_img{
    
-    background-image: url(/src/assets/imgWeb/banneracetato2.png);
+    background: url(/src/assets/imgWeb/banneracetato2.png) no-repeat;
     background-size: 100%;
     
 }
@@ -503,6 +503,24 @@ box-shadow: 0px 0px 1px 5px #0000003d;
     z-index: 3;
     
 
+}
+.gif_section{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    background-color: #fc6f90;
+}
+.gif_div{
+    display: flex;
+    
+    width: 100%;
+    height: 23vh;
+    box-shadow: 0px 25px 43px 3px #000000b2 inset;
+
+    margin: 10px;
+    border-radius: 20px;
+    background: url(/src/assets/imgWeb/cidaIAGIF2.gif) no-repeat;
+    background-size: 100%;
 }
 
 
