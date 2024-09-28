@@ -32,8 +32,20 @@ box-shadow: 0px 0px 1px 5px #0000003d;
     justify-content: center;
    
 }
-.main_option_massas{
+.main_option_massabranca{
     background: url(/src/assets/imgWeb/massabranca.png);
+
+    background-size: 100%;
+
+}
+.main_option_massachocolate{
+    background: url(/src/assets/imgWeb/massachocolate.png);
+
+    background-size: 100%;
+
+}
+.main_option_massared{
+    background: url(/src/assets/imgWeb/massared.png);
 
     background-size: 100%;
 

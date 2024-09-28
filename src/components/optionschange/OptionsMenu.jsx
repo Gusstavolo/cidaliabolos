@@ -108,9 +108,15 @@ export const OptionRightSize = () => {
 
         return () => clearInterval(interval);
     }, []);
+    const sizeInfos = {
+        1: { layer: 'main_option_massabranca'},
+        2: { layer: 'main_option_massachocolate' },
+        3: { layer: 'main_option_massared' },
+        
+      };
 
     return (
-        <div className="main_option main_option_massas">
+        <div className={`main_option ${sizeInfos[selectedSize].layer}`}>
             <div className="option_right">
                 <div className="option_left_size">
                     <div className="midle_title_right">
