@@ -108,8 +108,9 @@ body {
 }
 
 .iconWats {
-  width: 55px;
-  height: 62px;
+  width: 64px;
+  height: 64px;
+  scale: 0.8;
   background-image: url("./assets/waa.png");
 }
 
@@ -124,17 +125,17 @@ body {
   outline: none;
   color: #ffffff;
   z-index: 8;
-  gap: 10px;
-  font-size: 1.3rem;
-  font-family: "Lilita One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  scale: 0.9;
+  
   border: 4px dashed #ffffff;
   border-radius: 25px;
   background-color: #ff4f78;
   box-shadow: 0 0 0 4px #ff4f78, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
   transition: .1s ease-in-out, .4s color;
   transition: bottom 0.7s ease-in-out;
+}
+.h1_buttom{
+  font-size: 1.3rem;
 }
 .button-w.on {
   bottom: 2vh;
@@ -198,9 +199,13 @@ button:active {
     width: 500px;
   }
  
+ 
   .bannerHead {
     width: 100%;
     height: 200px;
+  }
+  .main{
+    width: 500px;
   }
   .titlename {
     width: 100%;
@@ -222,9 +227,7 @@ button:active {
     
 }
 @media screen and (min-width: 1000px) {
-  .body_main {
-    width: 500px;
-  }
+  
  
 
 }

@@ -76,7 +76,8 @@ const WhatsButton = ( ) => {
 
         <button onSubmit={handleSubmit} className={`learn-more button-w ${visible ? 'off' : 'on'}`}> 
                 <div className='iconWats'></div>
-                FAÇA SEU PEDIDO!
+                <div className='h1_buttom'> FAÇA SEU PEDIDO!</div>
+               
             </button>
 
   )
@@ -106,16 +107,16 @@ export const Body = () => {
 
         <div className="body_main">
           <div className="main">
-           <OverlayLoad />
-           <HeaderO />
-            <OptionLeftSize />
+            <OverlayLoad />
+              <HeaderO />
+              <OptionLeftSize />
 
-            
-            <OptionRightSize />
-            <OptionRecheios />
-            <OptionDecoracao />
-            <OptionFoot />
-            <WhatsButton />
+              
+              <OptionRightSize />
+              <OptionRecheios />
+              <OptionDecoracao />
+              <OptionFoot />
+              <WhatsButton />
             </div>
         </div>
     )
