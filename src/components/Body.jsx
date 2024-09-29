@@ -112,9 +112,9 @@ export const Body = () => {
               <OptionLeftSize />
 
               
-              <OptionRightSize />
-              <OptionRecheios />
-              <OptionDecoracao />
+              <OptionRightSize  />
+              <OptionRecheios loading="lazy"/>
+              <OptionDecoracao loading="lazy"/>
               <OptionFoot />
               <WhatsButton />
             </div>
