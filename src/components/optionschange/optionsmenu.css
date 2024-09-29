@@ -44,7 +44,7 @@ box-shadow: 0px 0px 1px 5px #0000003d;
     justify-content: center;
 }
 .main_option_massabranca{
-    background: url(/src/assets/imgWeb/massabranca.png);
+    background: url(/src/assets/imgWeb/massabranca-_1_.webp);
 
     background-size: 101%;
     background-position: 0px 13px;
@@ -52,14 +52,14 @@ box-shadow: 0px 0px 1px 5px #0000003d;
 
 }
 .main_option_massachocolate{
-    background: url(/src/assets/imgWeb/massachocolate.png);
+    background: url(/src/assets/imgWeb/massachocolate-_1_.webp);
 
     background-size: 101%;
     background-position: 0px 13px;
 
 }
 .main_option_massared{
-    background: url(/src/assets/imgWeb/massared.png);
+    background: url(/src/assets/imgWeb/massared-_1_.webp);
 
     background-size: 101%;
     background-position: 0px 13px;
@@ -379,13 +379,13 @@ box-shadow: 0px 0px 1px 5px #0000003d;
 }
 
 .topdecor_chantininho_img{
-    background: url(/src/assets/imgWeb/bannerachantininho.png) no-repeat;
+    background: url(/src/assets/imgWeb/bannerachantininho-_1_.webp) no-repeat;
     background-size: 100%;
 
 }
 .topdecor_acetato_img{
    
-    background: url(/src/assets/imgWeb/banneracetato2.png) no-repeat;
+    background: url(/src/assets/imgWeb/banneracetato2-_1_.webp) no-repeat;
     background-size: 100%;
     
 }
