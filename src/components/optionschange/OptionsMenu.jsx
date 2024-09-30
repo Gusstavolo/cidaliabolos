@@ -286,8 +286,14 @@ export const OptionDecoracao = () => {
                 DECORE NO SEU ESTILO
                 </div>
             <div className='gif_section'>
-                <div className='gif_div' loading="lazy">
-
+                <div className='roll1_div'>
+                  
+                </div>
+                <div className='roll2_div'>
+                  
+                </div>
+                <div className='roll3_div'>
+                  
                 </div>
             </div>
           
