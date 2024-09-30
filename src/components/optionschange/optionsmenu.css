@@ -505,31 +505,33 @@ box-shadow: 0px 0px 1px 5px #0000003d;
     width: 100%;   
     height: 26vh;
     background-color: #fc6f90;
-    justify-content: center
+    justify-content: center;
+    box-shadow: 0px 25px 43px 3px #ff92b6d2 inset;
+
 }
 .gif_div{
     display: flex;
     
-    width: 100%;
-    height: 26vh;
-    box-shadow: 0px 25px 43px 3px #0802048e inset;
-
-   
-    border-radius: 20px;
-    background: url(/src/assets/imgWeb/cidaIAGIF2.gif) no-repeat;
-    background-size: 100%;
+    width: auto;
+    height: auto;
+    margin: 10px;
 }
 .foot_page{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
     width: 100%;    height: 300px;
     background-color: #fc6f90;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     box-shadow: 0px 0px 1px 5px #00000021;
+    box-shadow: 0px -25px 43px 3px #5f1e3362 inset;
 
 }
 .roll1_div{
     width: 33vw;
     height: 100%;
+    border-radius: 5px;
     background: url(/src/assets/imgWeb/roll1-_1_.webp);
     background-size: 100% auto; /* Largura 100% e altura automática */
     background-repeat: repeat-y; /* Repete o background apenas na vertical */
@@ -538,6 +540,8 @@ box-shadow: 0px 0px 1px 5px #0000003d;
 .roll2_div{
     width: 33vw;
     height: 100%;
+    border-radius: 5px;
+    
     background: url(/src/assets/imgWeb/roll2-_1_.webp);
     background-size: 100% auto; /* Largura 100% e altura automática */
     background-repeat: repeat-y; /* Repete o background apenas na vertical */
@@ -546,10 +550,45 @@ box-shadow: 0px 0px 1px 5px #0000003d;
 .roll3_div{
     width: 33vw;
     height: 100%;
+    border-radius: 5px;
+    
     background: url(/src/assets/imgWeb/roll3-_1__1.webp);
     background-size: 100% auto; /* Largura 100% e altura automática */
     background-repeat: repeat-y; /* Repete o background apenas na vertical */
     animation: scrollBackgroundDawn 28s linear infinite; /* Animação infinita de 10s */
+}
+.insta_div{
+    display: flex;
+    position: relative;
+    border-radius: 25px;
+    top: 6vh;
+    width: 55vw;
+    height: 10vh;
+    font-size: 1.2rem;
+    background-color:#FF5B87;
+    justify-content: center;
+    align-items: center;
+}
+.instaicon{
+    width: 16vw;
+    height: 9vh;
+    scale: 0.7;
+
+    background: url(/src/assets/imgWeb/instagram.png) no-repeat;
+    background-size: 100% auto; 
+
+}
+.cbon_div{
+    position: relative;
+    scale: 1.3;
+    top: -5vh;
+    right: -4.5vw;
+    width: 33vw;
+    height: 26.9vh;
+    border-radius: 5px;
+    
+    background: url(/src/assets/imgWeb/cfigura.png) no-repeat;
+    background-size: 100% auto; 
 }
 
 @keyframes scrollBackgroundDawn {

@@ -286,14 +286,16 @@ export const OptionDecoracao = () => {
                 DECORE NO SEU ESTILO
                 </div>
             <div className='gif_section'>
-                <div className='roll1_div'>
-                  
-                </div>
-                <div className='roll2_div'>
-                  
-                </div>
-                <div className='roll3_div'>
-                  
+               <div className='gif_div'>
+                   <div className='roll1_div'>
+                    
+                   </div>
+                  <div className='roll2_div'>
+                    
+                  </div>
+                  <div className='roll3_div'>
+                    
+                  </div>
                 </div>
             </div>
           
@@ -306,8 +308,9 @@ export const OptionDecoracao = () => {
 
 export const OptionFoot = () => {
     return (
-        <div className='foot_page'>
-
+        <div className='foot_page' loading="lazy">
+          <div className='insta_div'> <div className='instaicon'></div>@andrade.cidalia</div>
+            <div className='cbon_div'></div>
         </div>
     )
 }
