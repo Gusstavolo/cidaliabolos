@@ -7,14 +7,18 @@
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
+    font-size: 1rem;
+
 }
 .headerO_d{
     width: 100%;
-    height: 20px;
+    height: 40px;
+    
 border-top-left-radius: 28px;
 border-top-right-radius: 28px;
 background-color: #FF5B87;
 box-shadow: 0px 0px 1px 5px #0000003d;
+font-size: 0.9rem;
 
 
 }
@@ -590,7 +594,127 @@ box-shadow: 0px 0px 1px 5px #0000003d;
     background: url(/src/assets/imgWeb/cfigura.png) no-repeat;
     background-size: 100% auto; 
 }
+.change_Sizemain{
+    display: flex;
+    width: 100vw;
+    height: 300px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.change_SizeValue{
+    display: flex;
+    width: 60%;
+    height: 10vh;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color: #FF5B87;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.change_Sizemain_midle{
+    display: flex;
+    width: 60vw;
+    height: 15vh;
+    background-color: #FF5B87;
+    border-radius: 30px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 
+}
+.change_Sizemain_midle_price{
+    display: flex;
+    font-size: 1.6rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.change_Sizemain_midle_slice{
+    display: flex;
+    font-size: 2.4rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.change_SizeValue_main{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+.change_txt_tt{
+    display: flex;
+    background-color: #FF5B87;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+}
+.change_SizeValue_loss{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    font-size: 2.1rem;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.change_SizeValue_aro{
+    display: flex;
+    width: 35%;
+    height: 95%;
+    font-size: 2.1rem;
+    border-radius: 60px;
+    box-shadow: 0 0 0 5px rgb(255, 255, 255); /* Simula uma borda branca com opacidade */
+
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.change_SizeValue_gain{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    font-size: 2.1rem;
+    
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.change_Sizemain_info{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: auto;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom-left-radius: 27px;
+    border-bottom-right-radius: 27px;
+    background-color: #FF5B87;
+}
+.change_SizeValue_aro_txt{
+    font-size: 1.9rem;
+}
+.change_animation_aro{
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
 @keyframes scrollBackgroundDawn {
     0% {
         background-position: 0 0; /* Começa na posição inicial */
@@ -607,6 +731,35 @@ box-shadow: 0px 0px 1px 5px #0000003d;
         background-position: 0 100%; /* Move a imagem para baixo */
     }
 }
+@keyframes myAnim {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
 
 @media screen and (min-width: 1000px) {
     
@@ -620,9 +773,7 @@ box-shadow: 0px 0px 1px 5px #0000003d;
     .option_left_infos {
         width: 36vw;
     }
-    .options_indirecton{
-        
-    }
+    
     .option_left_size{
         width: 34%;
     }

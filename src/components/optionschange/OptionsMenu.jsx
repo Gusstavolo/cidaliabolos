@@ -8,11 +8,112 @@ export const HeaderO = () => {
     return(
         <div className='headerO'>
             <div className='headerO_d'>
+            VALORES APROXIMADOS, CONSULTE O WHATSAPP PARA MAIS INFORMAÇÕES
 
             </div>
         </div>
 
     )
+}
+export const OpitonSizeCake = () => {
+  const sizeOptions = {
+    15: { aro: 'ARO 15', fatias: '15 FATIAS', preco: 'R$100,00' },
+    18: { aro: 'ARO 18', fatias: '21 FATIAS', preco: 'R$100,00' },
+    20: { aro: 'ARO 20', fatias: '30 FATIAS', preco: 'R$100,00' },
+    23: { aro: 'ARO 23', fatias: '45 FATIAS', preco: 'R$100,00' },
+    28: { aro: 'ARO 28', fatias: '70 FATIAS', preco: 'R$100,00' }
+  };
+
+  // Array com os tamanhos (15, 18, 20, 23, 28)
+  const sizes = [15, 18, 20, 23, 28];
+
+  // Definindo o estado para o aro selecionado
+  const [selectedAro, setSelectedAro] = useState(sizes[0]);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  // Função para aumentar o aro
+  const increaseAro = () => {
+    setSelectedAro((prevAro) => {
+      const currentIndex = sizes.indexOf(prevAro);
+      if (currentIndex !== -1) {
+        const nextIndex = (currentIndex + 1) % sizes.length; // Passa para o próximo ou retorna ao início
+        return sizes[nextIndex];
+      }
+      return sizes[0]; // Valor padrão se houver erro
+    });
+  };
+
+  // Função para diminuir o aro
+  const decreaseAro = () => {
+    setSelectedAro((prevAro) => {
+      const currentIndex = sizes.indexOf(prevAro);
+      if (currentIndex !== -1) {
+        const prevIndex = (currentIndex - 1 + sizes.length) % sizes.length; // Volta para o anterior ou para o último
+        return sizes[prevIndex];
+      }
+      return sizes[0]; // Valor padrão se houver erro
+    });
+  };
+
+  // useEffect para mudar automaticamente a cada 6 segundos
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSelectedAro((prevAro) => {
+        const currentIndex = sizes.indexOf(prevAro);
+        if (currentIndex !== -1) {
+          const nextIndex = (currentIndex + 1) % sizes.length;
+          return sizes[nextIndex];
+        }
+        return sizes[0]; // Valor padrão se houver erro
+      });
+    }, 6000);
+
+    // Limpeza do intervalo ao desmontar o componente
+    return () => clearInterval(interval);
+  }, []);
+  useEffect(() => {
+    // Ativa a animação
+    setIsAnimating(true);
+
+    // Remove a classe de animação após o tempo da animação (300ms neste exemplo)
+    const timeout = setTimeout(() => {
+      setIsAnimating(false);
+    }, 300);
+
+    return () => clearTimeout(timeout); // Limpeza do timeout
+  }, [selectedAro]);
+
+  
+  return(
+    <div className='main_option'>
+       <div className='change_Sizemain'>
+       <div className='change_Sizemain_info'> {sizeOptions[selectedAro].aro}</div>
+        <div className='change_Sizemain_midle'>
+          <div className='change_Sizemain_midle_price'>
+          {sizeOptions[selectedAro].preco}
+          </div>
+          <div className='change_Sizemain_midle_slice'>
+          {sizeOptions[selectedAro].fatias}
+          </div>
+          
+          </div>
+          <div className='change_SizeValue_main'>
+            <div className='change_txt_tt'>TAMANHOS</div>
+              <div className='change_SizeValue'>
+            
+              <div className='change_SizeValue_loss' onClick={decreaseAro}>  -</div>
+
+              <div className='change_SizeValue_aro' >
+                  <div className={`change_SizeValue_aro_txt ${isAnimating ? 'change_animation_aro' : ''}`}> {selectedAro}
+                  </div>
+                </div>
+               <div className='change_SizeValue_gain'  onClick={increaseAro}>+</div>
+           </div>
+          </div>
+      </div>
+    </div>
+
+  )
 }
 
 
@@ -149,6 +250,7 @@ export const OptionRightSize = () => {
         </div>
     );
 };
+
 export const OptionRecheios = () => {
 
 
@@ -310,7 +412,7 @@ export const OptionFoot = () => {
     return (
         <div className='foot_page' loading="lazy">
           <div className='insta_div'> <div className='instaicon'></div>@andrade.cidalia</div>
-            <div className='cbon_div'></div>
+            <div className=''></div>
         </div>
     )
 }

@@ -1,12 +1,8 @@
 import '../App.css'
-import './custom.slider.css'
-import 'react-slideshow-image/dist/styles.css';
 
-import { SlideSizeCake } from './custom.slider';
+
 import { useState,useEffect } from 'react'
-import { Slide } from 'react-slideshow-image';
-import { ImageSlider } from './ImageSlider';
-import { OptionLeftSize, OptionRightSize, HeaderO, OptionRecheios, OptionDecoracao, OptionFoot } from './optionschange/OptionsMenu';
+import { OpitonSizeCake, OptionLeftSize, OptionRightSize, HeaderO, OptionRecheios, OptionDecoracao, OptionFoot } from './optionschange/OptionsMenu';
 
 const OverlayLoad = () => {
   const [visible, setVisible] = useState(false);
@@ -90,14 +86,7 @@ const Header = () => {
       </div>
   )
 }
-const TestSlide = () => {
-  return (
-    <div className='bannerSizeOptions'>  
-      <SlideSizeCake />
-    </div>
 
-  )
-}
 
 export const Body = () => {
     
@@ -109,7 +98,7 @@ export const Body = () => {
           <div className="main">
             <OverlayLoad />
               <HeaderO />
-              <OptionLeftSize />
+              <OpitonSizeCake/>
 
               
               <OptionRightSize  />
