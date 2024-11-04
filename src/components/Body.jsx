@@ -1,8 +1,10 @@
 import '../App.css'
+import '.././components/endmenu/EndMenu.css'
 
 
 import { useState,useEffect } from 'react'
 import { OpitonSizeCake, OptionLeftSize, OptionRightSize, HeaderO, OptionRecheios, OptionDecoracao, OptionFoot } from './optionschange/OptionsMenu';
+import CakeCustomizer from './endmenu/CakeCustomizer';
 
 const OverlayLoad = () => {
   const [visible, setVisible] = useState(false);
@@ -44,15 +46,16 @@ const OverlayLoad = () => {
   )
 }
 const WhatsButton = ( ) => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const mensagem = "Olá, gostaria de encomendar um bolo.";
-    const numeroWhatsApp = '557599808083';
-    const urlWhatsApp = `whatsapp://send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensagem)}`;
-    
-    window.location.href = urlWhatsApp;
+  const [isCustomizerOpen, setIsCustomizerOpen] = useState(false);
+  const [selectedSize, setSelectedSize] = useState(23);
+  const [selectedMass, setSelectedMass] = useState('branca');
+
+  const handleWhatsApp = () => {
+    const message = `Olá! Gostaria de fazer um pedido:\n- Tamanho: ${selectedSize}cm\n- Massa: ${selectedMass}`;
+    window.open(`https://wa.me/5511999999999?text=${encodeURIComponent(message)}`);
   };
 
+ 
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -69,12 +72,26 @@ const WhatsButton = ( ) => {
   }, []);
   
   return (
-
-        <button onSubmit={handleSubmit} className={`learn-more button-w ${visible ? 'off' : 'on'}`}> 
+      <>
+      
+      <button  onClick={() => setIsCustomizerOpen(true)} className={`learn-more button-w ${visible ? 'off' : 'on'}`}> 
                 <div className='iconWats'></div>
                 <div className='h1_buttom'> FAÇA SEU PEDIDO!</div>
+                
                
             </button>
+      
+            {isCustomizerOpen && (
+        <CakeCustomizer
+          selectedSize={selectedSize}
+          selectedMass={selectedMass}
+          onClose={() => setIsCustomizerOpen(false)}
+          onFinish={handleWhatsApp}
+        />
+      )}
+      
+      </>
+        
 
   )
 }

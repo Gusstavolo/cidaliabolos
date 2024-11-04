@@ -20,12 +20,13 @@ export const OpitonSizeCake = () => {
     15: { aro: 'ARO 15', fatias: '15 FATIAS', preco: 'R$100,00' },
     18: { aro: 'ARO 18', fatias: '21 FATIAS', preco: 'R$100,00' },
     20: { aro: 'ARO 20', fatias: '30 FATIAS', preco: 'R$100,00' },
-    23: { aro: 'ARO 23', fatias: '45 FATIAS', preco: 'R$100,00' },
-    28: { aro: 'ARO 28', fatias: '70 FATIAS', preco: 'R$100,00' }
+    23: { aro: 'ARO 23', fatias: '40 FATIAS', preco: 'R$100,00' },
+    25: { aro: 'ARO 25', fatias: '45 FATIAS', preco: 'R$100,00' },
+    28: { aro: 'ARO 28', fatias: '60 FATIAS', preco: 'R$100,00' }
   };
 
   // Array com os tamanhos (15, 18, 20, 23, 28)
-  const sizes = [15, 18, 20, 23, 28];
+  const sizes = [15, 18, 20, 23,25, 28];
 
   // Definindo o estado para o aro selecionado
   const [selectedAro, setSelectedAro] = useState(sizes[0]);
@@ -118,7 +119,7 @@ export const OpitonSizeCake = () => {
 
 
 export const OptionLeftSize = () => {
-  const sizes = [15, 18, 20, 23, 28];
+  const sizes = [15, 18, 20, 23, 25, 28];
   const [selectedSize, setSelectedSize] = useState(sizes[0]);
 
   const handleSizeClick = (size) => {
@@ -142,6 +143,7 @@ export const OptionLeftSize = () => {
     18: { aro: 'ARO 18', fatias: '21 FATIAS', preco: 'R$100,00' },
     20: { aro: 'ARO 20', fatias: '30 FATIAS', preco: 'R$100,00' },
     23: { aro: 'ARO 23', fatias: '45 FATIAS', preco: 'R$100,00' },
+    25: { aro: 'ARO 25', fatias: '45 FATIAS', preco: 'R$100,00' },
     28: { aro: 'ARO 28', fatias: '70 FATIAS', preco: 'R$100,00' }
   };
 
