@@ -4,7 +4,6 @@ import '../endmenu/EndMenu.css';
 import { CAKE_SIZES, CAKE_FILLINGS, CAKE_TYPES, CAKE_EXTRAS, CAKE_MASSES } from '../../untils/cakeData';
 
 interface CakeCustomizerProps {
-  selectedSize: number;
   onClose: () => void;
 }
 
@@ -13,9 +12,9 @@ interface ExtrasQuantity {
 }
 
 export default function CakeCustomizer({
-  selectedSize,
   onClose,
 }: CakeCustomizerProps) {
+  const [selectedSize, setSelectedSize] = useState<string | number>(23);
   const [selectedMasses, setSelectedMasses] = useState<string[]>(['branca']);
   const [dualMass, setDualMass] = useState(false);
   const [selectedFillings, setSelectedFillings] = useState<string[]>([]);
@@ -51,57 +50,94 @@ export default function CakeCustomizer({
 
   const calculateTotal = () => {
     const basePrice = CAKE_SIZES[selectedSize as keyof typeof CAKE_SIZES]?.preco || 0;
+    
+    const massesPrice = selectedMasses.reduce((total, id) => {
+      const mass = CAKE_MASSES.find(m => m.id === id);
+      return total + (mass?.price || 0);
+    }, 0);
+    
     const fillingsPrice = selectedFillings.reduce((total, id) => {
       const filling = CAKE_FILLINGS.find(f => f.id === id);
       return total + (filling?.price || 0);
     }, 0);
+    
     const typePrice = CAKE_TYPES.find(t => t.id === selectedType)?.price || 0;
+    
     const extrasPrice = Object.entries(extrasQuantities).reduce((total, [id, quantity]) => {
       const extra = CAKE_EXTRAS.find(e => e.id === id);
       return total + (extra?.price || 0) * quantity;
     }, 0);
-    return basePrice + fillingsPrice + typePrice + extrasPrice;
+    
+    return basePrice + massesPrice + fillingsPrice + typePrice + extrasPrice;
   };
 
   const handleWhatsApp = () => {
-    const massText = selectedMasses.length > 1 
-      ? `Massas: ${selectedMasses.join(' e ')}` 
-      : `Massa: ${selectedMasses[0]}`;
+    const sizeInfo = CAKE_SIZES[selectedSize as keyof typeof CAKE_SIZES];
+    const massText = selectedMasses.map(id => {
+      const mass = CAKE_MASSES.find(m => m.id === id);
+      return `${mass?.name} (+R$ ${mass?.price},00)`;
+    }).join(' e ');
     
     const fillingsText = selectedFillings.map(id => {
       const filling = CAKE_FILLINGS.find(f => f.id === id);
-      return filling?.name;
+      return `${filling?.name} (+R$ ${filling?.price},00)`;
     }).join(' e ');
 
     const extrasText = Object.entries(extrasQuantities)
       .filter(([_, quantity]) => quantity > 0)
       .map(([id, quantity]) => {
         const extra = CAKE_EXTRAS.find(e => e.id === id);
-        return `${quantity}x ${extra?.name}`;
+        return `${quantity}x ${extra?.name} (+R$ ${(extra?.price || 0) * quantity},00)`;
       })
       .join('\n- ');
 
     const message = `Olá! Gostaria de fazer um pedido:
-- Tamanho: ${selectedSize}cm
+- Tamanho: ${sizeInfo?.aro} (${sizeInfo?.fatias})${sizeInfo?.andar ? ' - BOLO DE ANDAR' : ''}
+- Base: R$ ${sizeInfo?.preco},00
 - ${massText}
 - Recheios: ${fillingsText}
-- Tipo: ${CAKE_TYPES.find(t => t.id === selectedType)?.name}${extrasText ? '\n- ' + extrasText : ''}
+- Tipo: ${CAKE_TYPES.find(t => t.id === selectedType)?.name} (+R$ ${CAKE_TYPES.find(t => t.id === selectedType)?.price},00)${extrasText ? '\n- ' + extrasText : ''}
 Valor Total: R$ ${calculateTotal()},00`;
 
     window.open(`https://wa.me/5511999999999?text=${encodeURIComponent(message)}`);
   };
 
   const total = calculateTotal();
+  const selectedSizeInfo = CAKE_SIZES[selectedSize as keyof typeof CAKE_SIZES];
 
   return (
     <div className="modal-overlay">
       <div className="modal-content">
         <div className="modal-inner">
           <div className="modal-header">
-            <h3 className="modal-title">Personalize seu Bolo</h3>
+            <div>
+              <h3 className="modal-title">Personalize seu Bolo</h3>
+            </div>
             <button onClick={onClose} className="close-button">
               <X />
             </button>
+          </div>
+
+          <div className="options-section">
+            <div className="section-title">Tamanho do Bolo</div>
+            <div className="size-options">
+              {Object.entries(CAKE_SIZES).map(([size, info]) => (
+                <button
+                  key={size}
+                  onClick={() => setSelectedSize(size)}
+                  className={`size-option ${selectedSize === size ? 'selected' : ''}`}
+                >
+                  <div className="size-info">
+                    <div className="size-name">{info.aro}</div>
+                    <div className="size-description">{info.fatias}</div>
+                    <div className="size-price">R$ {info.preco},00</div>
+                    {info.andar && (
+                      <div className="size-tier">Bolo de Andar</div>
+                    )}
+                  </div>
+                </button>
+              ))}
+            </div>
           </div>
 
           <div className="options-section">
@@ -137,6 +173,11 @@ Valor Total: R$ ${calculateTotal()},00`;
                   <div className="mass-info">
                     <div className="mass-name">{mass.name}</div>
                     <div className="mass-description">{mass.description}</div>
+                    {mass.price > 0 && (
+                      <div className="text-sm text-pink-500 font-medium mt-1">
+                        + R$ {mass.price},00
+                      </div>
+                    )}
                   </div>
                 </button>
               ))}
@@ -212,7 +253,10 @@ Valor Total: R$ ${calculateTotal()},00`;
           </div>
 
           <div className="total-section">
-            <div className="total-label">Valor Total:</div>
+            <div>
+              <div className="total-label">Valor Total:</div>
+              <div className="text-sm text-gray-600">Base: R$ {selectedSizeInfo?.preco},00</div>
+            </div>
             <div className="total-price">R$ {total},00</div>
           </div>
 
