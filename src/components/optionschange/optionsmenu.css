@@ -71,13 +71,14 @@ font-size: 0.9rem;
 }
 .option_left{
     width: auto;
-    height: auto;
+    height: 48vw;
     justify-content: center;
     align-content: center;
     
     display: flex;
     
 }
+
 .option_left_infos{
     display: flex;
     width: 60vw;
@@ -123,9 +124,10 @@ font-size: 0.9rem;
 .option_infos_preco{
     font-size: 1.4rem;
 }
-.option_left_size{
+.option_left_size {
     display: flex;
     width: 35vw;
+    height: 45vw;
     background-color: #FF7A99;
 }
 .midle_title{
@@ -155,6 +157,7 @@ font-size: 0.9rem;
 .options_indirecton{
     display: flex;
     width: 100%;
+    height: 100%;
     flex-direction: column;
     align-items: flex-end;
     background-color:#fc6f90  ;
@@ -211,16 +214,15 @@ font-size: 0.9rem;
 
 
 
-.option_right{
-    display: flex;
+.option_right {
+    display: flex
+;
     position: relative;
     width: 100%;
     height: auto;
-    
     justify-content: flex-end;
     align-items: flex-end;
     align-content: center;
-
 }
 .midle_title_right{
     display: flex;
@@ -247,6 +249,8 @@ font-size: 0.9rem;
 .options_indirecton_b{
     display: flex;
     width: 100%;
+    height: 100%;
+
     flex-direction: column;
     
 
@@ -260,8 +264,8 @@ font-size: 0.9rem;
 
 
     
-    width: 83px;
-    height: 63px;
+    width: 90px;
+    height: 35%;
     background-color: #FF5B87;
     border-bottom-right-radius: 28px;
     border-top-right-radius: 28px;
@@ -428,7 +432,7 @@ font-size: 0.9rem;
 .option_left_size_ac{
     display: flex;
     width: 31vw;
-    height: 25vh;
+    height: auto;
     background-color: #FF7A99;
 }
 .option_a_ac{
@@ -437,7 +441,7 @@ font-size: 0.9rem;
  
     
     width: 113px;
-    height: 14vh;
+    height: 50%;
     background-color: #FF5B87;
     border-bottom-left-radius: 50px;
     border-top-left-radius: 50px;
@@ -460,7 +464,7 @@ font-size: 0.9rem;
     font-size: 1rem;
     justify-content: center;
     width:  100px;
-    height: 12vh;
+    height: 100%;
     border-radius: 50px;
     background-color: #FF5B87;
     box-shadow: 0 0 0 5px rgba(253, 253, 253, 0); /* Simula uma borda branca com opacidade */
@@ -566,18 +570,18 @@ font-size: 0.9rem;
     position: relative;
     border-radius: 25px;
     top: 6vh;
-    width: 55vw;
+    width: 80%;
     height: 10vh;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     background-color:#FF5B87;
     justify-content: center;
     align-items: center;
 }
 .instaicon{
-    width: 16vw;
-    height: 9vh;
+    width: 100px;
+    height: 100px;
     scale: 0.7;
-
+    
     background: url(/src/assets/imgWeb/instagram.png) no-repeat;
     background-size: 100% auto; 
 
@@ -770,15 +774,108 @@ font-size: 0.9rem;
         width: 100%;
 
     }
+    .gif_section{
+        width: 100%
+    }
+    .gif_div{
+        display: flex;
+        
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+
     .option_left_infos {
         width: 36vw;
     }
     
     .option_left_size{
         width: 34%;
+        height: 240px;
     }
     .option_left_infos_ac{
         width: 100%;
         height: 35vh;
     }
+
+    .change_SizeValue_main{
+        display: flex;
+        width: 500px;
+        height: auto;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .change_SizeValue{
+        display: flex;
+        width: 60%;
+        height: 10vh;
+       
+    }
+  
+    .change_Sizemain{
+        display: flex;
+        width: 500px;
+        height: 300px;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .change_Sizemain_midle{
+        display: flex;
+        width: 80%;
+        height: 15vh;
+        background-color: #FF5B87;
+        border-radius: 30px;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .option_left{
+        width: 500px;
+        height: 240px;
+        justify-content: center;
+        align-content: center;
+        
+        display: flex;
+        
+    }
+    .option_left_size_ac {
+        display: flex;
+        width: 50%;
+        height: auto;
+        background-color: #FF7A99;
+    }
+    
+    .option_a_buttom_ac{
+        height: auto;
+
+    }
+
+    
+    .options_indirecton {
+        display: flex;
+    
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: #fc6f90;
+    }
+    .option_a_ac {
+        display: flex;
+        position: relative;
+        width: 113px;
+        height: 50%;
+        background-color: #FF5B87;
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 50px;
+    }
+    .headerO_d{
+        font-size: 0.8rem;
+    }
+    
   }
